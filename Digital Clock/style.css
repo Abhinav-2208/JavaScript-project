@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vai&family=Nunito:wght@200;300&display=swap');
+body{
+    font-family: 'Noto Sans Vai', sans-serif;
+    overflow: hidden;
+    background: conic-gradient(at top right, lightcyan, lightblue);
+
+}
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digitalClock{
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+    color: maroon;
+
+}
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media(max-width:760px){
+    #bar1,#bar2{
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .digitalClock h1{
+        display: inline-block;
+        font-size: 2rem;
+    }
+}
